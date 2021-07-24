@@ -1,0 +1,238 @@
+{
+	"config"				:	[ {	"bounds":	[0,"GW"] } ],
+	"blocks"				:	[
+		{
+			"image"			:	["sky", 0,0, "TLayer.BACK", 6],
+			"color"			:	"0x50a0ff",
+			"scale"			:	["GW/4", "GROUNDMIN/256"]
+		},
+		{
+			"image"			:	["sky", "GW/2",0, "TLayer.BACK", 6],
+			"color"			:	"0x94ffd0",
+			"scale"			:	["GW/4", "GROUNDMIN/256"]
+		},
+		{
+			"color"			:	"0x50a0ff",
+			"color2"		:	"0x94ffd0",
+			"scale"			:	["2", "GROUNDMIN/256"],
+			"image"			:	["sky", "GW/2-52",0, "TLayer.BACK", 6],
+			"lerpcolor"		:	"1/14"
+		},
+		{	"image"			:	["sky", "GW/2-44",0, "TLayer.BACK", 6], "lerpcolor" : "2/14" },
+		{	"image"			:	["sky", "GW/2-36",0, "TLayer.BACK", 6], "lerpcolor" : "3/14" },
+		{	"image"			:	["sky", "GW/2-28",0, "TLayer.BACK", 6], "lerpcolor" : "4/14" },
+		{	"image"			:	["sky", "GW/2-20",0, "TLayer.BACK", 6], "lerpcolor" : "5/14" },
+		{	"image"			:	["sky", "GW/2-12",0, "TLayer.BACK", 6], "lerpcolor" : "6/14" },
+		{	"image"			:	["sky", "GW/2-4",0, "TLayer.BACK", 6], "lerpcolor" : "7/14" },
+		{	"image"			:	["sky", "GW/2+4",0, "TLayer.BACK", 6], "lerpcolor" : "8/14" },
+		{	"image"			:	["sky", "GW/2+12",0, "TLayer.BACK", 6], "lerpcolor" : "9/14" },
+		{	"image"			:	["sky", "GW/2+20",0, "TLayer.BACK", 6], "lerpcolor" : "10/14" },
+		{	"image"			:	["sky", "GW/2+28",0, "TLayer.BACK", 6], "lerpcolor" : "11/14" },
+		{	"image"			:	["sky", "GW/2+36",0, "TLayer.BACK", 6], "lerpcolor" : "12/14" },
+		{	"image"			:	["sky", "GW/2+44",0, "TLayer.BACK", 6], "lerpcolor" : "13/14" },
+		{
+			"scale"			:	[1,1],
+			"rect"			:	["0","GROUNDMIN+5", "GW", "GH-GROUNDMIN+5", "TLayer.ROAD",6],
+			"color"			:	"0x000000",
+			"blend"			:	0
+		},
+		
+		{"__comment__"		:	"ROAD",
+			"color"			:	"0xffffff",
+			"tile"			:	["tiles", 0, "GROUNDMIN+40", "GW", 8, "road-4", "TLayer.ROAD4", 2]
+		},
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+48", "GW",12, "road-3", "TLayer.ROAD3", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+60", "GW",24, "road-2", "TLayer.ROAD2", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+84", "GW",48, "road-1", "TLayer.ROAD1", 2] },
+		
+		{"__comment__"		:	"PAVEMENT",
+			"tile"			:	["tiles", 0, "GROUNDMIN"   , "GW", 4, "pavement-5", "TLayer.PAVEMENT5", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+ 4", "GW",12, "pavement-4", "TLayer.PAVEMENT4", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+16", "GW",12, "pavement-3", "TLayer.PAVEMENT3", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+28", "GW", 4, "pavement-2", "TLayer.PAVEMENT2", 2] },
+		{	"tile"			:	["tiles", 0, "GROUNDMIN+32", "GW", 8, "pavement-1", "TLayer.PAVEMENT1", 2] },
+		
+		{"__comment__"		:	"mid ground - Far",
+			"alpha"			:	1,
+			"color"			:	"0x708090",
+			"handle"		:	[0,0],
+			"tile"			:	["tiles", 0, "GROUNDMIN-48", "GW", 24, "midground-grass", "TLayer.FAR2"],
+			"tilescale"		:	["GW/l_Shape.width",1]
+		},
+		{	"handle"		:	[0.5,1],
+			"color"			:	"0x607080",
+			"tile"			:	[ "tiles" , "GW*0.5+200", "GROUNDMIN-36", 192, 192, "central", "TLayer.FAR2", 3 ] },
+		
+		{"__comment__"		:	"mid ground Far2",
+			"handle"		:	[0,0],
+			"lerpcolor"		:	0.8,
+			"tile"			:	["tiles", 0, "GROUNDMIN-32", "GW", 32, "midground-grass", "TLayer.FAR3"],
+			"tilescale"		:	["GW/l_Shape.width",1]
+		},
+		
+		
+		{"__comment__"		:	"TREES",
+			"handle"		:	[0.5, 1],
+			"lerpcolor"		:	0.8,
+			"tile"			:	[ "trees" , "GW*2/8", "GROUNDMIN-27", 192, 192, "tree-01", "TLayer.FAR3", 3 ] },
+		{	"tile"			:	[ "trees" , "GW*3/8", "GROUNDMIN-20", 192, 192, "tree-02", "TLayer.FAR3", 3 ] },
+		{	"tile"			:	[ "trees" , "GW*1/8", "GROUNDMIN-10", 192, 220, "tree-03", "TLayer.FAR3", 3 ] },
+		
+		
+		{"__comment__"		:	"NUKE-CENTRAL / DEAD-TREES",
+			"handle"		:	[0.5,1],
+			"lerpcolor"		:	1,
+			"tile"			:	[ "trees" , "GW*0.5+100", "GROUNDMIN-20", 128, 128, "tree-04", "TLayer.FAR3", 3 ] },
+		{	"tile"			:	[ "trees" , "GW*0.5+250", "GROUNDMIN-15",  64,  64, "tree-05", "TLayer.FAR3", 3 ] }
+	],
+	
+	
+	"templates":[
+		{
+			"id"			:	0,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-a-01",
+			"size"			:	[256,256,128,128],
+			"max_particles"	:	4,
+			"layer"			:	"TLayer.FAR",
+			"flag"			:	0,
+			"life"			:	["(GW/2+256)*35"],
+			"offset"		:	[0,"GH/8"],
+			"velx"			:	[1],
+			"vely"			:	[0],
+			"alpha"			:	[3,0],
+			"angle"			:	[0],
+			"vangle"		:	[0],
+			"gravity"		:	[0]
+		},
+		{
+			"id"			:	1,
+			"source"		:	0,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-a-02"
+		},
+		{
+			"id"			:	2,
+			"source"		:	0,
+			"size"			:	[128,128,128,128],
+			"life"			:	["(GW/2+128)*30"],
+			"offset"		:	[0,"GH/6"],
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-b-01",
+			"max_particles"	:	5
+		},
+		{
+			"id"			:	3,
+			"source"		:	2,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-b-02"
+		},
+		{
+			"id"			:	4,
+			"source"		:	0,
+			"layer"			:	"TLayer.FAR2",
+			"size"			:	[128,128,64,64],
+			"life"			:	["(GW/2+128)*25"],
+			"offset"		:	[0,"GH/5"],
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-c-01",
+			"max_particles"	:	8
+		},
+		{
+			"id"			:	5,
+			"source"		:	4,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-c-02"
+		},
+		{
+			"id"			:	6,
+			"source"		:	5,
+			"size"			:	[128,128,32,32],
+			"life"			:	["(GW/2+128)*25"],
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-d-01"
+		},
+		{
+			"id"			:	7,
+			"source"		:	6,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-d-02"
+		},
+		{
+			"id"			:	8,
+			"source"		:	6,
+			"size"			:	[64,64,32,32],
+			"life"			:	["(GW/2+64)*30"],
+			"offset"		:	[0,"GH/4"],
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-e-01",
+			"max_particles"	:	12
+		},
+		{
+			"id"			:	9,
+			"source"		:	8,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-e-02"
+		},
+		{
+			"id"			:	10,
+			"source"		:	8,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-e-03"
+		},
+		{
+			"id"			:	11,
+			"source"		:	8,
+			"atlas"			:	"clouds",
+			"frame"			:	"cloud-e-04"
+		}
+	],
+	
+	
+	"emitters":	[
+		{"__comment__"		:	"Largest-Clouds",
+			"templates"		:	[0,1],
+			"x"				:	"GW+256",
+			"y"				:	"GH*1/10",
+			"vx"			:	-0.5,
+			"vy"			:	0,
+			"frequency"		:	8000
+		},
+		
+		{"__comment__"		:	"Large-Clouds",
+			"templates"		:	[2,3],
+			"x"				:	"GW+128",
+			"y"				:	"GH*1.5/10",
+			"vx"			:	-0.6,
+			"vy"			:	0,
+			"frequency"		:	4000
+		},
+		
+		{"__comment__"		:	"Medium-Clouds",
+			"templates"		:	[4,5],
+			"x"				:	"GW+128",
+			"y"				:	"GH*2/10",
+			"vx"			:	-0.7,
+			"vy"			:	0,
+			"frequency"		:	1500
+		},
+		
+		{"__comment__"		:	"small-Clouds",
+			"templates"		:	[6,7],
+			"x"				:	"GW+64",
+			"y"				:	"GH*2.5/10",
+			"vx"			:	-0.9,
+			"vy"			:	0,
+			"frequency"		:	700
+		},
+		
+		{"__comment__"		:	"Smallest-Clouds",
+			"templates"		:	[8,9,10,11],
+			"x"				:	"GW+32",
+			"y"				:	"GH*3/10",
+			"vx"			:	-1.1,
+			"vy"			:	0,
+			"frequency"		:	500
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{ "frames": [
+	{ "filename": "powerbar",
+		"frame": {"x":0, "y":0, "w":256, "h":32}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":256, "h":32}, 
+		"sourceSize": {"w":256, "h":32}
+	},
+	{ "filename": "heartTrue",
+		"frame": {"x":220, "y":0, "w":16, "h":16}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":16}, 
+		"sourceSize": {"w":16, "h":16}
+	},
+	{ "filename": "heartFalse",
+		"frame": {"x":237, "y":0, "w":16, "h":16}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":16}, 
+		"sourceSize": {"w":16, "h":16}
+	}
+	]
+}

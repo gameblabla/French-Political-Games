@@ -1,0 +1,16 @@
+{
+	"config"		:	[ {	"bounds":	[0,"GW"] } ],
+	
+	"back"		:	[
+		{
+			"layer":"TLayer.BACK",
+			"blocks":{
+				"sky" : ["sky", -10,-10, "GW","GH"]
+			},
+			"tiles":{
+				"" : []
+				}
+			}
+	]
+	
+}

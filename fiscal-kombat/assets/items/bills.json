@@ -1,0 +1,52 @@
+{ "frames": [
+	{ "filename": "bill-5",
+		"frame": {"x":0, "y":0, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-10",
+		"frame": {"x":0, "y":8, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-20",
+		"frame": {"x":0, "y":16, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-50",
+		"frame": {"x":0, "y":24, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-100",
+		"frame": {"x":0, "y":32, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-200",
+		"frame": {"x":0, "y":40, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}, 
+	{ "filename": "bill-500",
+		"frame": {"x":0, "y":48, "w":16, "h":8}, 
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":16, "h":8}, 
+		"sourceSize": {"w":16, "h":8}
+	}
+	]
+}

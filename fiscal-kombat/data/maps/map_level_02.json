@@ -1,0 +1,188 @@
+{
+	"config"	:	[ {	"bounds":	[0,8750] } ],
+	"blocks"				:	[
+		{
+			"type"			:	"rect",
+			"color"			:	"0xff0000",
+			"layer"			:	"TLayer.ROAD",
+			"flag"			:	"6",
+			"blend"			:	0,
+			"shape"			:	["0","GROUNDMIN+5", "GW", "GH-GROUNDMIN+5"]
+		},
+		
+		{"__comment__"		:	"SKY",
+			"rgb"			:	[175,195,190],
+			"alpha"			:	1,
+			"handle"		:	[0,0],
+			"scale"			:	[1,1],
+			"tile"			:	["tiles", "-200", -50, "GW+400", "GROUNDMIN+50", "gradient", "TLayer.BACK", 7]
+		},
+		
+		{"__comment__"		:	"BACK",
+			"origin"		:	[0, "GROUNDMIN"],
+			"handle"		:	[0,1],
+			"color"			:	"0xffffff",
+			"alpha"			:	1,
+			"scale"			:	[1,1],
+			"tile"			:	["tiles", 0, -62, "GW", "-1","back-city-mounts", "TLayer.BACK", 4]
+		},
+		
+		{"__comment__"		:	"FAR",
+			"handle"		:	[0,1],
+			"color"			:	"0xffffff",
+			"alpha"			:	1,
+			"scale"			:	[1,1],
+			"tile"			:	["tiles", 0, -28, "BOUNDW/PARALLAX[TLayer.FAR]", "-1","back-city-p", "TLayer.FAR"]
+		},
+		{"__comment__"		:	"event central-crack",
+			"origin"		:	[0, 0],
+			"rgb"			:	[140,155,185],
+			"central"		:	[2100, "GROUNDMIN-35-254", "TLayer.FAR", 0]
+		},
+		
+		{"__comment__"		:	"ROAD",
+			"origin"		:	[0, "GROUNDMIN"],
+			"handle"		:	[0,0],
+			"color"			:	"0xffffff",
+			"tile"			:	["tiles", 0, 40, "BOUNDW/PARALLAX[TLayer.ROAD4]", 8, "road-4", "TLayer.ROAD4", 2]
+			},
+			{"tile"			:	["tiles", 0, 48, "BOUNDW/PARALLAX[TLayer.ROAD3]",12, "road-3", "TLayer.ROAD3", 2] },
+			{"tile"			:	["tiles", 0, 60, "BOUNDW/PARALLAX[TLayer.ROAD2]",24, "road-2", "TLayer.ROAD2", 2] },
+			{"tile"			:	["tiles", 0, 84, "BOUNDW/PARALLAX[TLayer.ROAD1]",48, "road-1", "TLayer.ROAD1", 2] },
+		
+		{"__comment__"		:	"PAVEMENT",
+			"tile"			:	["tiles", 0,  0, "BOUNDW/PARALLAX[TLayer.PAVEMENT5]", 4, "pavement-5", "TLayer.PAVEMENT5", 2] },
+			{"tile"			:	["tiles", 0,  4, "BOUNDW/PARALLAX[TLayer.PAVEMENT4]",12, "pavement-4", "TLayer.PAVEMENT4", 2] },
+			{"tile"			:	["tiles", 0, 16, "BOUNDW/PARALLAX[TLayer.PAVEMENT3]",12, "pavement-3", "TLayer.PAVEMENT3", 2] },
+			{"tile"			:	["tiles", 0, 28, "BOUNDW/PARALLAX[TLayer.PAVEMENT2]", 4, "pavement-2", "TLayer.PAVEMENT2", 2] },
+			{"tile"			:	["tiles", 0, 32, "BOUNDW/PARALLAX[TLayer.PAVEMENT1]", 8, "pavement-1", "TLayer.PAVEMENT1", 2] },
+		
+		{"__comment__"		:	"MID GROUND",
+			"handle"		:	[0,1],
+			"color__"		:	"0xa0b0c8",
+			"tile"			:	["tiles", 0, -19, "BOUNDW*PARALLAX[TLayer.FAR2]",27, "midground-pop-1", "TLayer.FAR2", 2] },
+			{"color__"		:	"0xb0c0d8",
+			"tile"			:	["tiles", 0,  -4, "BOUNDW*PARALLAX[TLayer.FAR3]",15, "midground-pop-2", "TLayer.FAR3", 2] },
+			{"color__"		:	"0xffffff",
+			"tile"			:	["tiles", 0,  0, "BOUNDW*PARALLAX[TLayer.MEDIUM]",4, "midground-pop-3", "TLayer.MEDIUM", 2] },
+			
+		{"__comment__"		:	"BATIMENTS",
+			"origin"		:	[256, "GROUNDMIN-45"],
+			"color"			:	"0x9095a0",
+			"handle"		:	[0,1],
+			"tile"			:	["tiles",       0,  0, "11*32",     -1, "bat-p-base-3-c0", "TLayer.FAR2"] },
+			{"tile"			:	["tiles",      16,-48,  "5*64", "3*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "13*32",  0, "15*32",     -1, "bat-p-base-2-c1", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "13*32+16",-48,  "7*64", "2*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "30*32",  0,  "5*32",     -1, "bat-p-base-4-c2", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "30*32+16",-48,  "2*64", "4*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "37*32",  0,  "9*32",     -1, "bat-p-base-4-c3", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "37*32+16",-48,  "4*64", "4*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "48*32",  0,  "7*32",     -1, "bat-p-base-4-c4", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "48*32+16",-48,  "3*64", "4*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "57*32",  0, "15*32",     -1, "bat-p-base-3-c5", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "57*32+16",-48,  "7*64", "3*48", "base-p-windows" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "75*32",  0,  "9*32",     -1, "bat-p-base-4-c6", "TLayer.FAR2"] },
+			{"tile"			:	["tiles", "75*32+16",-48,  "4*64", "4*48", "base-p-windows" , "TLayer.FAR2"] },
+			
+		{"__comment__"		:	"LAMPS", "scale":[1,1],
+			"origin"		:	[0, "GROUNDMIN-41"],
+			"tile"			:	["tiles",  196, 4,   -1,  -1,      "lamp-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles",  640, 4,   -1,  -1,      "lamp-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles", 1280, 4,   -1,  -1,      "lamp-1" , "TLayer.FAR2", 3], "scale":[-1,1] },
+			{"tile"			:	["tiles", 1888, 4,   -1,  -1,      "lamp-1" , "TLayer.FAR2", 3], "scale":[1,1] },
+			{"tile"			:	["tiles", 3168, 4,   -1,  -1,      "lamp-1" , "TLayer.FAR2", 3] },
+			
+		{"__comment__"		:	"WALLS",
+			"tile"			:	["tiles",  816, 4,  192,  24,   "wall-p-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1078, 4,  180,  24,   "wall-p-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1010, 4,   -1,  -1, "portal-b-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 1005, 4,   -1,  -1, "pillar-b-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 1075, 4,   -1,  -1, "pillar-b-48" , "TLayer.FAR2", 8] },
+			
+			{"tile"			:	["tiles", 1340,   4,  450,  24,   "wall-p-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1858,   4,  250,  24,   "wall-p-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1340, -20,  450,  -1,    "fence-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1858, -20,  250,  -1,    "fence-48" , "TLayer.FAR2"] },
+			{"tile"			:	["tiles", 1792,   4,   -1,  -1,   "portal-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 1338,   4,   -1,  -1,   "pillar-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 1786,   4,   -1,  -1,   "pillar-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 1856,   4,   -1,  -1,   "pillar-48" , "TLayer.FAR2", 8] },
+			{"tile"			:	["tiles", 2106,   4,   -1,  -1,   "pillar-48" , "TLayer.FAR2", 8] },
+			
+			
+			
+		{"__comment__"		:	"BINS",
+			"tile"			:	["tiles", "12*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles", "43*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles", "60*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles", "88*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles","102*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			{"tile"			:	["tiles","110*32",  5,   16,  24, "bin-1" , "TLayer.FAR2", 3] },
+			
+		{"__comment__"		:	"MIDDLE BINS",
+			"origin"		:	[0, "GROUNDMIN+32"],
+			"color"			:	"0xffffff",
+			"tile"			:	["tiles",  "512", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "1536", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "2560", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "3072", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "4096", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "5120", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "6144", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] },
+			{"tile"			:	["tiles", "7168", 0,  32, 48, "bin-1" , "TLayer.FRONT", 3] }
+			
+	],
+	"templates":[
+		{
+			"id"			:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-5",
+			"wmin"			:	16,
+			"wmax"			:	16,
+			"hmin"			:	8,
+			"hmax"			:	8,
+			"max_particles"	:	100,
+			"alpha"			:	[1,1],
+			"layer"			:	"TLayer.POSTFX",
+			"flag"			:	0
+		},
+		{
+			"id"			:	1,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-10"
+		},
+		{
+			"id"			:	2,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-20"
+		},
+		{
+			"id"			:	3,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-50"
+		},
+		{
+			"id"			:	4,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-100"
+		},
+		{
+			"id"			:	5,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-200"
+		},
+		{
+			"id"			:	6,
+			"source"		:	0,
+			"atlas"			:	"bills",
+			"frame"			:	"bill-500"
+		}
+	],
+	"emitters"				:	[]
+}

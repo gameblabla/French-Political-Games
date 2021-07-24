@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=Edge">
+	  <style type="text/css">	
+		body {
+			background-color: black;
+			margin		: 0;
+			font-family	: 'press_start_2pregular', cursive;
+			font-size	: 32px;
+		}
+		
+		@font-face 
+		{
+				font-family	: 'press_start_2pregular';
+				src			: url('assets/fonts/pressstart2p-regular-webfont.woff2') format('woff2'),
+							  url('assets/fonts/pressstart2p-regular-webfont.woff') format('woff');
+				font-weight	: normal;
+				font-style	: normal;
+		}
+		
+        canvas 
+        {
+			image-rendering: optimizeSpeed;
+		    image-rendering: crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			-ms-interpolation-mode: nearest-neighbor;
+        }
+		@media (orientation: landscape) {
+				.playfield { display: none; }
+				.overlay { display: block; }
+		}
+			
+		@media (orientation: portrait) {
+				.playfield { display: block; }
+				.overlay { display: none; }
+		}
+			
+		@-ms-viewport {
+				width: device-width;
+				height: device-height;
+		}
+	  </style>
+	  
+	    <title>Fiscal Kombat</title>
+
+	</head>
+	
+	<body>
+		
+		<div class="game">
+			<div id="game">
+					<!-- ******************** -->
+					<!-- Current Game Version -->
+					<!-- ******************** -->
+					<script type="text/javascript">
+						var MODE_DEBUG				=	0;
+						var MODE_GAME				=	1;
+						var MODE_GOD				=	2;
+						
+						// Update this anytime something changed.
+						var ENGINE_VERSION			=	"0.310-a";
+					</script>
+					<script type="text/javascript" src="fi.js"></script>
+					<canvas width="675" height="380" style="display: block; position: absolute; touch-action: none; -moz-user-select: none; width: 817px; height: 460px; left: 0;  right: 0;"></canvas>
+			</div>
+		</div>
+
+	</body>
+	
+</html>

@@ -1,0 +1,48 @@
+{
+	"config":	[
+					{
+						"folder-mapdata" : "data/maps/",
+						"folder-motions" : "data/scenario/"
+					}
+				],
+	
+	"maps":		[
+					{	"guid"	:	0,
+						"id"	:	"mapdata-title",
+						"file"	:	"map_title.json"
+					},
+					{	"guid"	:	1,
+						"id"	:	"mapdata-intro",
+						"file"	:	"map_intro.json"
+					},
+					{	"guid"	:	2,
+						"id"	:	"mapdata-level-01",
+						"file"	:	"map_level_01.json"
+					},
+					{	"guid"	:	3,
+						"id"	:	"mapdata-level-02",
+						"file"	:	"map_level_02.json"
+					},
+					{	"guid"	:	4,
+						"id"	:	"mapdata-level-03",
+						"file"	:	"map_level_03.json"
+					},
+					{	"guid"	:	5,
+						"id"	:	"mapdata-level-04",
+						"file"	:	"map_level_04.json"
+					},
+					{	"guid"	:	6,
+						"id"	:	"mapdata-level-05",
+						"file"	:	"map_level_05.json"
+					}
+				],
+	
+	"motions":	[
+					{
+						"guid"	:	1,
+						"name"	:	"cahuzac",
+						"id"	:	"cahuzac",
+						"file"	:	"cahuzac.json"
+					}
+	]
+}

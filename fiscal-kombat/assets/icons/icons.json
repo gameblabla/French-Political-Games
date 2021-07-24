@@ -1,0 +1,87 @@
+{ "frames": [
+	{ "filename": "prev",
+		"frame": {"x":320, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "next",
+		"frame": {"x":288, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "uncheck",
+		"frame": {"x":256, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "check",
+		"frame": {"x":224, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "setup",
+		"frame": {"x":192, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "reduice",
+		"frame": {"x":160, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "fullscreen",
+		"frame": {"x":128, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "post-effect",
+		"frame": {"x":96, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "music2",
+		"frame": {"x":64, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "music",
+		"frame": {"x":32, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	},
+	{ "filename": "loadbar",
+		"frame": {"x":0, "y":32, "w":128, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":128, "h":32},
+		"sourceSize": {"w":128, "h":32}
+	},
+	{ "filename": "sounds",
+		"frame": {"x":0, "y":0, "w":32, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":32, "h":32},
+		"sourceSize": {"w":32, "h":32}
+	}
+	]
+}

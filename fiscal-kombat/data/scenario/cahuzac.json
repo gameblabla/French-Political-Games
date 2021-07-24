@@ -1,0 +1,44 @@
+{
+	"boss"				:
+	[
+		{
+			"name"		:	"cahuzac"
+		}
+	],
+	
+	"motion"			:
+	[
+		{
+			"action"	:	[ "stop-channel", 0, 1, null, "[channel:0]" ],
+			"action"	:	[ "free-channel", 0, 1, null, "[channel:0]" ],
+			"action"	:	[ "screen-bands",    0, 1500, null, 1 ],
+			"action"	:	[ "camera-center",   0,    1, "[cam.pos]" ],
+			"action"	:	[ "get-char-pos",    0,    1, "[plr.pos]", "[player]" ],
+			
+			"action"	:	[ "def-vec"	    ,    0,    1, "[bos.of0]", 1000, 0.0  ],
+			"action"	:	[ "def-vec"	    ,    0,    1, "[bos.of1]",  300, 0.0  ],
+			
+			"action"	:	[ "vec"			,    1, 1500, "[bos.cur]", 
+								["eval",
+									[
+										[1,1500], ["vec",
+													["vec-add", "[plr.pos]", "[bos.of0]"],
+													["vec-add", "[plr.pos]", "[bos.of1]"]
+													]
+									]
+								]
+							],
+			
+			"action"	:	[ "def-char-dir-x",  0,    1, null, "[player]", 1 ],
+			"action"	:	[ "char-play"	,    0,    1, null, "[player]", "attente" ],
+			
+			"action"	:	[ "def-char-dir-x",  0,    1, null, "[char]"   , -1 ],
+			"action"	:	[ "char-play"	,    0,    1, null, "[char]"   , "marche" ],
+			"action"	:	[ "char-play"	, 1500,    1, null, "[char]"   , "attente" ],
+			
+			"action"	:	[ "set-char-pos" ,    1, 1500, null, "[char]", "[bos.cur]"  ],
+			
+			"eval" 		:	[[1, 1500],["camera-focus", ["vec", "[cam.pos]", ["vec-mid", "[plr.pos]", "[bos.cur]" ] ] ] ]
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{ "frames": [
+	{ "filename": "tree-05",
+		"frame": {"x":128, "y":960, "w":64, "h":64},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":64, "h":64},
+		"sourceSize": {"w":64, "h":64}
+	}, 
+	{ "filename": "tree-04",
+		"frame": {"x":0, "y":896, "w":128, "h":128},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":128, "h":128},
+		"sourceSize": {"w":128, "h":128}
+	}, 
+	{ "filename": "tree-03",
+		"frame": {"x":0, "y":512, "w":256, "h":320},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":256, "h":320},
+		"sourceSize": {"w":256, "h":320}
+	}, 
+	{ "filename": "tree-02",
+		"frame": {"x":0, "y":256, "w":256, "h":256},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":256, "h":256},
+		"sourceSize": {"w":256, "h":256}
+	}, 
+	{ "filename": "tree-01",
+		"frame": {"x":0, "y":0, "w":256, "h":256},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":256, "h":256},
+		"sourceSize": {"w":256, "h":256}
+	}, 
+	{ "filename": "arbust-3",
+		"frame": {"x":128, "y":832, "w":65, "h":128},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":65, "h":128},
+		"sourceSize": {"w":65, "h":128}
+	}, 
+	{ "filename": "arbust-2",
+		"frame": {"x":0, "y":864, "w":96, "h":32},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":96, "h":32},
+		"sourceSize": {"w":96, "h":32}
+	}, 
+	{ "filename": "arbust-1",
+		"frame": {"x":192, "y":896, "w":64, "h":128},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x": 0, "y": 0, "w":64, "h":128},
+		"sourceSize": {"w":64, "h":128}
+	}
+	]
+}
