@@ -11,6 +11,7 @@ I also provided a rough english translation (index-en.html) with it.
 
 Later, a 2019 variant of the game was created for the European elections with a different protagonist. (That variant later got a Godot-based Android port)
 
+You can play it here : https://gameblabla.github.io/French-Political-Games/fiscal-kombat/
 
 # Super Jam Bros
 
@@ -19,3 +20,5 @@ This was a platformer game created by AdAsGame for "La Republique En marche" (Re
 According to newspapers, around 5000~10000€ were spent for the creation of the game.
 
 Unlike Fiscal Kombat, this requires WebGL and was created with GDevelop.
+
+You can play it here : https://gameblabla.github.io/French-Political-Games/super-jam-bros/jam.html
